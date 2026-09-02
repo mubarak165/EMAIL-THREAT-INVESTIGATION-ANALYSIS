@@ -63,7 +63,7 @@ From a fake Microsoft domain (a zero swapped in for the letter "o"), every check
 ---
 
 ### 🟠 #8 — Unsolicited Recruiter Offer — MEDIUM RISK
-<img width="461" height="587" alt="image" src="https://github.com/user-attachments/assets/ab3f9155-3b75-416f-8a73-7052f66f2f4a" />
+<img width="454" height="602" alt="image" src="https://github.com/user-attachments/assets/1c1e509e-22fc-4796-8320-145414f78b6d" />
 
 
 The domain is technically valid, but a legitimate recruiter would never ask for a PAN card and salary slip before even scheduling an interview — and the attached `.zip` file is a common way to smuggle malware to a first-time contact.
