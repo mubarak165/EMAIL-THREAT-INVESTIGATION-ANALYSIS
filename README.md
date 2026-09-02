@@ -21,12 +21,14 @@ Two emails in this set passed every security check — correct domain, SPF/DKIM/
 ## The two that fooled the technical checks
 
 ### 🔴 "Quick favor before my flight" — impersonating the CFO
-![CFO gift card scam](screenshots/email-11.jpg)
+<img width="442" height="462" alt="image" src="https://github.com/user-attachments/assets/e9b3f6c0-0a0f-4b72-bfb4-1524e498d8e9" />
+
 
 The sender address is completely real and passes every check. The only giveaway: any reply gets secretly redirected to a personal email address. It asks for Amazon gift cards, urgently, and tells the recipient not to call to confirm — dangerous precisely *because* the headers look fine.
 
 ### 🟠 "Updated bank details" — vendor payment fraud
-![Vendor bank fraud](screenshots/email-03.jpg)
+<img width="448" height="596" alt="image" src="https://github.com/user-attachments/assets/7a3d24f8-af68-4ca3-ae5e-582bb2be61d3" />
+
 
 Passes SPF/DKIM/DMARC for its own domain, so it's not an obvious fake. But it asks to change where a real invoice gets paid, and replies are quietly redirected to a different domain. This is how real companies lose real money — the fraud is in the *content*, not the headers.
 
