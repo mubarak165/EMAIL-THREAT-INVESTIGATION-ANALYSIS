@@ -7,91 +7,103 @@ All 13 recovered emails, shown exactly as investigated, with the verdict and rea
 ---
 
 ### 🟢 #1 — Password Expiry Reminder — SAFE
-![Email 1](screenshots/email-01.jpg)
+<img width="475" height="546" alt="image" src="https://github.com/user-attachments/assets/8c5f0591-987f-4e6f-978d-0912af316fcf" />
+
 
 Real IT helpdesk, matching sender/reply-to, all checks pass. Nothing asked beyond a routine password change. No links, no urgency.
 
 ---
 
 ### 🔴 #2 — "Mailbox Storage is FULL" — SUSPICIOUS
-![Email 2](screenshots/email-02.jpg)
+<img width="450" height="567" alt="image" src="https://github.com/user-attachments/assets/3c5b80eb-82dc-4227-9c18-1cec4046d92f" />
+
 
 Sent from a fake copycat domain, every security check failed, and it pressures you to "verify" your login on a fake page. Classic credential theft.
 
 ---
 
 ### 🟠 #3 — Invoice & "Updated Bank Details" — MEDIUM RISK
-![Email 3](screenshots/email-03.jpg)
+<img width="451" height="583" alt="image" src="https://github.com/user-attachments/assets/eccd2ffa-159d-49d9-943b-94777765d1ea" />
+
 
 Passes SPF/DKIM/DMARC for its own domain, so it's not an obvious fake. But it asks to change where a real invoice gets paid, and replies are quietly redirected to a different domain. This is how real companies lose real money — the fraud is in the *content*, not the headers.
 
 ---
 
 ### 🟢 #4 — Revised Leave & WFH Policy — SAFE
-![Email 4](screenshots/email-04.jpg)
+<img width="457" height="550" alt="image" src="https://github.com/user-attachments/assets/e94e505e-9e91-4781-8f16-b6c1b4159715" />
+
 
 Real HR broadcast to all staff, fully authenticated, no links, no urgency.
 
 ---
 
 ### 🔴 #5 — "Urgent Wire Transfer" from the "MD" — SUSPICIOUS
-![Email 5](screenshots/email-05.jpg)
+<img width="442" height="517" alt="image" src="https://github.com/user-attachments/assets/42744a4c-7c61-4f26-91ca-148c2e2f0bd2" />
+
 
 Actually sent from a free look-alike email address with zero authentication. Impersonates a senior executive, demands secrecy and a same-day payment. Classic CEO fraud.
 
 ---
 
 ### 🟢 #6 — Google Drive File Share — SAFE
-![Email 6](screenshots/email-06.jpg)
+<img width="473" height="544" alt="image" src="https://github.com/user-attachments/assets/7f82d6ff-d8a3-4b42-8623-e24fa3cfb3d0" />
+
 
 Genuinely from Google's real infrastructure, shared by a real named colleague referencing a plausible internal event.
 
 ---
 
 ### 🔴 #7 — "Unusual Microsoft Sign-in" — SUSPICIOUS
-![Email 7](screenshots/email-07.jpg)
+<img width="457" height="562" alt="image" src="https://github.com/user-attachments/assets/825c0a24-2414-43de-804a-d5e7ebeb275d" />
+
 
 From a fake Microsoft domain (a zero swapped in for the letter "o"), every check failed. Same credential-theft trick as #2, dressed up as Microsoft.
 
 ---
 
 ### 🟠 #8 — Unsolicited Recruiter Offer — MEDIUM RISK
-![Email 8](screenshots/email-08.jpg)
+<img width="461" height="587" alt="image" src="https://github.com/user-attachments/assets/ab3f9155-3b75-416f-8a73-7052f66f2f4a" />
+
 
 The domain is technically valid, but a legitimate recruiter would never ask for a PAN card and salary slip before even scheduling an interview — and the attached `.zip` file is a common way to smuggle malware to a first-time contact.
 
 ---
 
 ### 🟢 #9 — Software Subscription Renewal — SAFE
-![Email 9](screenshots/email-09.jpg)
+<img width="449" height="563" alt="image" src="https://github.com/user-attachments/assets/39b2dd21-6d7e-4429-84e5-6dc3fde14ad8" />
+
 
 Real vendor, fully authenticated, and the email itself explicitly confirms no bank details have changed.
 
 ---
 
 ### 🔴 #10 — "You Won the Lottery" — SUSPICIOUS
-![Email 10](screenshots/email-10.jpg)
+<img width="458" height="607" alt="image" src="https://github.com/user-attachments/assets/70643b8a-5e81-41ed-a4ea-35dcea4e0d65" />
+
 
 A mass scam blast (recipient was Bcc'd), every check failed, asks for a "fee" to release a prize that doesn't exist.
 
 ---
 
 ### 🔴 #11 — "Quick Favor Before My Flight" (CFO) — SUSPICIOUS
-![Email 11](screenshots/email-11.jpg)
+<img width="446" height="481" alt="image" src="https://github.com/user-attachments/assets/bd9606f2-8519-4efe-b659-85a473b5ef8a" />
+
 
 The cleverest one in the set. The sender address is completely real and passes every check. The only giveaway is that any reply gets secretly redirected to a personal email address. It asks for Amazon gift cards, urgently, and tells the recipient not to call to confirm — dangerous precisely *because* the headers look fine.
 
 ---
 
 ### 🟢 #12 — Mandatory Security Training Reminder — SAFE
-![Email 12](screenshots/email-12.jpg)
+<img width="457" height="562" alt="image" src="https://github.com/user-attachments/assets/af1275af-42d3-4279-b0f3-e2b801963cc1" />
 
 Real internal notice from InfoSec, points to the known company learning portal, fully authenticated.
 
 ---
 
 ### 🔴 #13 — "Pending Invoice" with Attachment — SUSPICIOUS
-![Email 13](screenshots/email-13.jpg)
+
+<img width="455" height="565" alt="image" src="https://github.com/user-attachments/assets/c7d1ca7c-4faf-4499-9a37-ffd9f1d183f7" />
 
 The domain failed every check, and the attachment is a Word file that asks you to "enable macros" to view it — one of the most common ways attackers get malware to run on your computer.
 
